@@ -1,0 +1,30 @@
+{
+  "name": "bun-express-postgres-vercel-boilerplate",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "author": {
+    "name": "Rochiyat",
+    "email": "rochiyat@gmail.com",
+    "url": "https://github.com/rochiyat"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target node --minify && mv dist/index.js dist/index.mjs",
+    "start": "bun run dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.1",
+    "@types/joi": "^17.2.3",
+    "@types/sequelize": "^4.28.20"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "sequelize": "^6.37.7"
+  }
+}
