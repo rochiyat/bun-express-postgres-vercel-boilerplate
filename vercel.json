@@ -1,0 +1,12 @@
+{
+  "buildCommand": "bun install && bun run build",
+  "startCommand": "bun run dist/index.mjs",
+  "installCommand": "bun install",
+  "outputDirectory": "dist",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/index.mjs"
+    }
+  ]
+}
